@@ -1,0 +1,41 @@
+package aula_02_condicionais;
+
+import java.util.Scanner;
+
+public class exercicio08 {
+	    
+		 public static void main(String[] args) {
+		        Scanner scanner = new Scanner(System.in);
+		        float saldo = 1000.00f;
+
+		        System.out.println("Digite a operação a ser realizada (1-Saldo, 2-Saque, 3-Depósito): ");
+		        int operacao = scanner.nextInt();
+
+		        switch (operacao) {
+		            case 1:
+		                System.out.println("Operação - Saldo");
+		                System.out.println("Saldo: R$" + saldo);
+		                break;
+		            case 2:
+		                System.out.println("Operação - Saque");
+		                System.out.println("Digite o valor a ser sacado: ");
+		                float valorSaque = scanner.nextFloat();
+		                if (saldo < valorSaque) {
+		                    System.out.println("Saldo Insuficiente!");
+		                } else {
+		                    saldo -= valorSaque;
+		                    System.out.println("Novo Saldo: R$" + saldo);
+		                }
+		                break;
+		            case 3:
+		                System.out.println("Operação - Depósito");
+		                System.out.println("Digite o valor a ser depositado: ");
+		                float valorDeposito = scanner.nextFloat();
+		                saldo += valorDeposito;
+		                System.out.println("Novo Saldo: R$" + saldo);
+		                break;
+		            default:
+		                System.out.println("Operação Inválida!");
+		        }
+		    }
+		}

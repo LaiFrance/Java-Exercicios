@@ -1,0 +1,49 @@
+package aula_02_condicionais;
+
+public class exercicio05 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe o código do produto (1 a 6):");
+		int cod = sc.nextInt();
+		
+		System.out.println("Informe a quantidade comprada:");
+		int quant = sc.nextInt();
+		
+		String produto = "";
+		double preco = 0;
+		double total = 0;
+		
+		if (cod == 1) {
+			produto = "Cachorro Quente";
+			preco = 10;
+			total = quant * preco;
+		} else if (cod == 2) {
+			produto = "X-Salada";
+			preco = 15;
+			total = quant * preco;
+		} else if (cod == 3) {
+			produto = "X-Bacon";
+			preco = 18;
+			total = quant * preco;
+		} else if (cod == 4) {
+			produto = "Bauru";
+			preco = 12;
+			total = quant * preco;
+		} else if (cod == 5) {
+			produto = "Refrigerante";
+			preco = 8;
+			total = quant * preco;
+		} else if (cod == 6) {
+			produto = "Suco de laranja";
+			preco = 13;
+			total = quant * preco;
+		}
+		
+		System.out.println("Valor total da conta: R$ " + total);
+		System.out.println("Produto comprado: " + produto);
+		
+		sc.close();
+	}
+}
+

@@ -1,0 +1,44 @@
+package aula_02_condicionais;
+
+public class exercicio08 {
+	public static void main(String[] args) {
+	    
+	    float saldo = 1000.00f;
+	    int codigo;
+	    float valor;
+	    
+	    System.out.println("Digite o código da operação:");
+	    codigo = Integer.parseInt(System.console().readLine());
+	    
+	    switch (codigo) {
+	      case 1:
+	        System.out.println("Operação - Saldo");
+	        System.out.println("Saldo: R$" + saldo);
+	        break;
+	        
+	      case 2:
+	        System.out.println("Operação - Saque");
+	        System.out.println("Digite o valor a ser sacado:");
+	        valor = Float.parseFloat(System.console().readLine());
+	        if (valor > saldo) {
+	          System.out.println("Saldo insuficiente.");
+	        } else {
+	          saldo = saldo - valor;
+	          System.out.println("Saque realizado. Novo saldo: R$" + saldo);
+	        }
+	        break;
+	        
+	      case 3:
+	        System.out.println("Operação - Depósito");
+	        System.out.println("Digite o valor a ser depositado:");
+	        valor = Float.parseFloat(System.console().readLine());
+	        saldo = saldo + valor;
+	        System.out.println("Depósito realizado. Novo saldo: R$" + saldo);
+	        break;
+	        
+	      default:
+	        System.out.println("Operação inválida!");
+	        break;
+	    }
+	  }
+	}

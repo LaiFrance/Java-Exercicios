@@ -1,0 +1,16 @@
+package aula_01;
+
+public class Variaveis {
+	public static void main(String[] args) {
+		int numero = 10;
+		String nome = "Rebeca Damas";
+		double area = 45.6349979;
+				
+				System.out.println("O nome da participante é: " + nome);
+				System.out.println("O numero da participante é: " + numero);
+				System.out.printf("O numero  é: " + area);
+				System.out.printf("O numero é: %.2f" + area);
+		
+	}
+
+}

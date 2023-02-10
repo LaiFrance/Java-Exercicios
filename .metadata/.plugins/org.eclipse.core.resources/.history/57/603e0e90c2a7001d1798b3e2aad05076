@@ -1,0 +1,13 @@
+package aula_01;
+
+public class Variaveis {
+	public static void main(String[] args) {
+		int numero = 10;
+		String nome = "Rebeca Damas";
+				
+				System.out.println("O nome da participante é: " + nome);
+				System.out.println("O numero da participante é: " + numero);
+		
+	}
+
+}

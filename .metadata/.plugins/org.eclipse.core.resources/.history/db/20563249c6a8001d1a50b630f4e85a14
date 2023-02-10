@@ -1,0 +1,29 @@
+package exercicio_01;
+
+import java.util.Scanner;
+
+public class exercicio01 {
+	public static void main(String[] args) {
+		Scanner leitor = new Scanner(System.in);
+		
+		int a, b, c;
+		
+		System.out.print("Informe o primeiro valor inteiro: ");
+		a = leitor.nextInt();
+		
+		System.out.print("Informe o segundo valor inteiro: ");
+		b = leitor.nextInt();
+		
+		System.out.print("Informe o terceiro valor inteiro: ");
+		c = leitor.nextInt();
+		
+		if (a + b > c) {
+			System.out.println("A soma de " + a + " + " + b + " é maior que " + c + ".");
+		} else if (a + b < c) {
+			System.out.println("A soma de " + a + " + " + b + " é menor que " + c + ".");
+		} else {
+			System.out.println("A soma de " + a + " + " + b + " é igual a " + c + ".");
+		}
+	}
+}
+
