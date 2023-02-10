@@ -3,17 +3,16 @@ package aula_03_lacosderepeticao;
 import java.util.Scanner;
 
 public class aula03 {
-public static void main (String[] args) {
-	
-        int numero, contador;
-        Scanner leia = new Scanner(System.in);
+	public static void main(String[] args) {
 
-        System.out.println("Digite a Tabuada que você deseja calcular: ");
-        numero = leia.nextInt();
+		int numero, contador;
+		Scanner leia = new Scanner(System.in);
 
-        for (contador = 1; contador <= 10; contador++) {
-            System.out.println(numero + " x " + contador + " = " + numero * contador);
-        }
-    }
+		System.out.println("Digite a Tabuada que você deseja calcular: ");
+		numero = leia.nextInt();
+
+		for (contador = 1; contador <= 10; contador++) {
+			System.out.println(numero + " x " + contador + " = " + numero * contador);
+		}
+	}
 }
-
