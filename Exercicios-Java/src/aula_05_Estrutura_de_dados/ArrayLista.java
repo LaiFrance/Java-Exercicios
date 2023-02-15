@@ -66,6 +66,7 @@ public class ArrayLista {
 					System.out.println("Nota não encontrada");
 				}
 				break;
+
 			default:
 				if (opcao > 6)
 					System.out.println("Opção invalida");
