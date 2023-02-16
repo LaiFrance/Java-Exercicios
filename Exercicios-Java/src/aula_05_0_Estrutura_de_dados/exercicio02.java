@@ -1,4 +1,4 @@
-package aula_05_Estrutura_de_dados;
+package aula_05_0_Estrutura_de_dados;
 
 import java.util.Scanner;
 import java.util.Stack;
@@ -20,23 +20,23 @@ public class exercicio02 {
 
 			switch (opcao) {
 			case 1:
-				System.out.print("Digite o nome: ");
+				System.out.print("\nDigite o nome: ");
 				String nomeLivro = entrada.next();
 				pilhaLivros.push(nomeLivro);
-				System.out.println("Livro adicionado!");
+				System.out.println("\nLivro adicionado!");
 				break;
 			case 2:
-				System.out.println("Pilha: ");
+				System.out.println("\nPilha: ");
 				for (String livro : pilhaLivros) {
 					System.out.println(livro);
 				}
 				break;
 			case 3:
 				if (!pilhaLivros.empty()) {
-					System.out.println("Livro retirado:");
+					System.out.println("\nLivro retirado:");
 					System.out.println(pilhaLivros.pop());
 				} else {
-					System.out.println("Pilha vazia!");
+					System.out.println("\nPilha vazia!");
 				}
 				break;
 			case 0:

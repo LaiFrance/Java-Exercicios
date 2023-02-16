@@ -1,4 +1,4 @@
-package aula_05_Estrutura_de_dados;
+package aula_05_0_Estrutura_de_dados;
 
 import java.util.Scanner;
 import java.util.ArrayList;
