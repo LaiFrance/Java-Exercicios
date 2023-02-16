@@ -8,6 +8,10 @@ public class TestaMetodos {
 		metodoPadrao();
 		metodoProtegido();
 		metodoPrivado();
+		Classe1.metodoPublico1();
+		Classe1.metodoFriendly1();
+		Classe1.metodoProtegido1();
+		
 		System.out.println(soma(2, 4));
 	}
 
